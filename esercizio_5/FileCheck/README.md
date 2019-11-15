@@ -1,6 +1,6 @@
 ### CONSIDERAZIONI
-- Software già installato: incrontab
-- Server già configurato per inviare mail a server di posta
+- Software gia' installato: incrontab
+- Server gia' configurato per inviare mail a server di posta
 - Indirizzo mail corretto associato all'utente root
 
 
