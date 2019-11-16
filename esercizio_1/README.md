@@ -4,3 +4,13 @@ Abbiamo un apache con 3 virtualhost (site_a, site_b, site_c), ogni virtualhost h
 - mandi un webhook in tempo reale a http://webhook.local/pagina_404 quando viene trovato un log di accesso alla pagina /404.html
 - crei un file di log delle chiamate fatte (in /var/log/webhook.log)
 - lo script deve partire automaticamente all'avvio della macchina
+
+
+### SOLUZIONE error_404
+- Installare swatch sul sistema.
+- Copiare il contenuto del file init.d_swatch.sh in vim /etc/init.d/swatch
+- Abilitare l'esecuzione all'avvio systemctl enable swatch.service
+- utilizzare swatch_01.conf
+
+  
+
