@@ -1,0 +1,18 @@
+version: "1"
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./percorsoApp/ShopCatalogApplication.war:/usr/local/tomcat/webapps/ShopCatalogApplication.war
+    ports:
+      - "8080:8080"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
